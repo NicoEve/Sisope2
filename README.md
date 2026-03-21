@@ -8,6 +8,7 @@ El algoritmo MLFQ organiza los procesos en múltiples colas con diferentes nivel
   - La cola 1 tiene mayor prioridad.
   - La cola 4 tiene menor prioridad.
   - Siempre se ejecuta primero la cola más prioritaria que tenga procesos.
+    
 Cada cola puede usar un algoritmo diferente:
   - RR (Round Robin) → con quantum
   - SJF (Shortest Job First) → no expropiativo
