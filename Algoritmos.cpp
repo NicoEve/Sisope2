@@ -569,6 +569,5 @@ int main(int argc, char* argv[]) {
         writeOutputFile(outputFile, processes, timeline);
         cout << "\nOutput file generated: " << outputFile << "\n";
     }
-
     return 0;
 }
