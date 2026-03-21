@@ -13,6 +13,7 @@ Cada cola puede usar un algoritmo diferente:
   - RR (Round Robin) → con quantum
   - SJF (Shortest Job First) → no expropiativo
   - STCF (Shortest Time to Completion First) → expropiativo
+    
 Además:
 Si llega un proceso en una cola más prioritaria, puede interrumpir la ejecución actual.
 Dentro de cada cola se respeta la prioridad y orden de llegada.
@@ -37,6 +38,7 @@ Archivo .txt con el siguiente formato:
 - D;15;0;2;3
 - E;8;0;3;2
 - F;7;2;4;1
+  
 Campos:
 - label → nombre del proceso
 - BT → Burst Time
@@ -48,8 +50,10 @@ Campos:
 
 Compilar:
 - g++ -o mlfq main.cpp
+  
 Ejecutar:
 - ./mlfq archivoEntrada.txt esquema archivoSalida.txt
+  
 Ejemplo:
 - ./mlfq mlq001.txt 1 output.txt
 
@@ -62,11 +66,13 @@ Tabla con:
   - CT → Completion Time
   - RT → Response Time
   - TAT → Turnaround Time
+    
 ✔ Archivo de salida
 Formato:
 # etiqueta; BT; AT; Q; Pr; WT; CT; RT; TAT
 - A;6;0;1;5;...;...;...;...
 - WT=...; CT=...; RT=...; TAT=...;
+  
 También incluye:
   - Línea de tiempo de ejecución (timeline)
 
